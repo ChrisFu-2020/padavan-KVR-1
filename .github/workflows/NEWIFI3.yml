@@ -307,10 +307,10 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config
 
         ##包含 Aria2 下载管理器。openssl 约 1.2MB，aria2 约 3.5MB
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >> .config
 
         ##包含 Aria2 WEB 控制界面。约 0.7MB。
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config
 
         
 
@@ -321,7 +321,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config
         
         ## OpenVPN。需要 IPv6 支持。openssl 约 1.2MB，openvpn 约 0.4MB
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config
 
         ## 广东工业校园认证
         echo "CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM=n" >> .config
@@ -336,7 +336,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config
 
          ## IPV6中继
-        echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> .config
 
          ## ss服务器
         echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config
@@ -357,19 +357,19 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> .config
 
          ## TTYD
-        echo "CONFIG_FIRMWARE_INCLUDE_TTYD=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_TTYD=n" >> .config
 
          ## 文件传输工具
-        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> .config
 
          ## 系统状态监控工具
         echo "CONFIG_FIRMWARE_INCLUDE_HTOP=y" >> .config
 
          ## 文本编辑器
-        echo "CONFIG_FIRMWARE_INCLUDE_NANO=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> .config
 
          ## iperf3测速软件
-        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> .config
 
         ## DUMP1090
         echo "CONFIG_FIRMWARE_INCLUDE_DUMP1090=y" >> .config
@@ -381,7 +381,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=y" >> .config
 
         ## ipv6端口转发工具
-        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> .config
 
         ## SRELAY代理
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config
